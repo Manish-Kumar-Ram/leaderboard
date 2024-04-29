@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <script src="script.js" defer></script>
+    <style>
+       /* Default styles for row elements */
+h1{
+    font-size: 3rem;
+color: hotpink;
+font-family: 'Gilroy',sans-serif;
+font-weight: 600;
+}
+span{
+    color: black;
+    
+}
+       .row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    align-items: flex-start;
+    padding: 50px;
+    background-color: rgb(147, 28, 28);
+    color: white;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.row img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.row button {
+    padding: 10px 20px;
+    width: 100px; /* Set a fixed width for all buttons */
+    border: none;
+    background-color: orange;
+    color: white;
+    margin: 10px; /* Adjust margin for spacing */
+    border-radius: 10px;
+}
+
+/* Additional styles for the submit button */
+form input[type='submit'] {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    background-color: orange;
+    border-radius: 10px;
+    margin: 10px; /* Add margin for spacing */
+}
+
+
+/* Styles for elements within the row */
+.row p {
+    margin: 0;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    form{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+/* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .row  {
+        padding: 5px;
+        
+    }
+    form{
+        padding: 5px;
+
+    }
+}
+
+        form{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        form input{
+            padding: 10px;
+
+            outline: none;
+            border-radius: 10px;
+            margin: 10px;
+            
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>LEADERBOARD
+        <br>
+        <span>PROJECT</span>
+    </h1>
+    <form action="" id="scoreform">
+        <input name="" id="fname" type="text" placeholder="enter Firstname" />
+        <input required id="lname" type="text" placeholder="enter lastname" />
+        <input required id="country" type="text" placeholder="enter country" />
+        <input required id="pro" type="text" placeholder="enter profession" />
+        <input required id="score" type="number" placeholder="enter scores" />
+        <input required id="sub" type="submit">
+
+
+
+    </form>
+    <div id="info">
+
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+</html>
